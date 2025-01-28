@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Verdana;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    perspective: 1000px;
+    perspective-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+}
+
+.shape,
+.shape2 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+    transform: rotateY(0);
+    transition: transform 1s ease;
+    position: absolute;
+    top: 0;
+    border: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    font-size: 30px;
+}
+
+.shape {
+    left: 0;
+}
+
+.shape2 {
+    right: 0;
+}
+
+.shape.move {
+    transform: rotateY(50deg);
+}
+
+.shape2.move {
+    transform: rotateY(-50deg);
+}
+
+.shape:hover {
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
+    /* Adjust this value if needed */
+}
+
+.shape2:hover {
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
+    /* Adjust this value if needed */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and label vertically */
+    align-items: center;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 3s ease;
+}
+
+.logo-container.show {
+    opacity: 1;
+    /* Show logo when doors open */
+}
+
+.center-image {
+    width: 250px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.label {
+    font-family: Verdana;
+    margin-top: 10px;
+    /* Adjust the spacing as needed */
+    font-size: 35px;
+    /* Adjust the font size as needed */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#ProjectHeader {
+    opacity: 1;
+}
+
+#Socials img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#Socials a {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from parent element */
+}
+
+a:hover {
+    color: rgb(199, 0, 0);
+    /* Change color on hover if desired */
+}

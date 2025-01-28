@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Verdana;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.center-image {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.label {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+#ProjectHeader {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from parent element */
+    display: block;
+    margin: 10px 0;
+}
+
+a:hover {
+    color: rgb(199, 0, 0);
+    /* Change color on hover if desired */
+}
+
+#Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#Socials img {
+    width: 50px;
+    /* Adjust the width as needed */
+    height: 50px;
+    /* Adjust the height as needed */
+    margin: 0 10px;
+}
