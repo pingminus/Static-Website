@@ -8,7 +8,7 @@ body {
     width: 100%;
     height: 100vh;
     border: 0;
-    margin: 0;
+    margin: 0px;
     padding: 0;
     overflow: hidden;
     perspective: 1000px;
@@ -16,14 +16,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 100px;
     position: relative;
     flex-direction: column;
+    ;
 }
 
 .shape,
 .shape2 {
-    width: 50%;
+    width: 43%;
     height: 100%;
     background-color: rgb(255, 255, 255, 0.5);
     transform: rotateY(0);
@@ -41,6 +42,12 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: Verdana;
     font-size: 30px;
+    transform: rotateX(90deg);
+    gap: 10px;
+}
+
+.shape2 {
+    transform: rotateX(90deg);
 }
 
 .shape {
@@ -52,21 +59,23 @@ body {
 }
 
 .shape.move {
-    transform: rotateY(50deg);
+    transform: rotateX(0);
+    transition: transform 1s ease;
 }
 
 .shape2.move {
-    transform: rotateY(-50deg);
+    transform: rotateY(0);
+    transition: transform 1s ease;
 }
 
 .shape:hover {
-    transform: rotateY(0deg);
+    transform: rotateY(1deg);
     transition: transform 1s ease;
     /* Adjust this value if needed */
 }
 
 .shape2:hover {
-    transform: rotateY(0deg);
+    transform: rotateY(1deg);
     transition: transform 1s ease;
     /* Adjust this value if needed */
 }
@@ -78,12 +87,11 @@ body {
     align-items: center;
     opacity: 0;
     /* Initially hidden */
-    transition: opacity 3s ease;
 }
 
 .logo-container.show {
-    opacity: 1;
     /* Show logo when doors open */
+    opacity: 1;
 }
 
 .center-image {
